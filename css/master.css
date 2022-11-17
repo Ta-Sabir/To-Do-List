@@ -1,0 +1,212 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Start Header */
+.header{
+    background-image: url(../img/bac-image.jpg);
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+}
+@media(max-width:767px){
+    .header{
+        height: 30vh;
+    }
+}
+.header .ovarly{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(134, 21, 156, 0.404);
+}
+@media(max-width:767px){
+    .header .ovarly{
+        height: 30vh;
+    }   
+}
+.header .box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-60%,-50%);
+   
+}
+.header .box .title{
+    display: flex;
+}
+.header .box  h4{
+    color: white;
+    font-size: 17px;
+    margin-top: 50px;
+}
+.header .box p{
+    color: white;
+}
+.header h3{
+    color: white;
+    font-size: 35px;
+}
+@media(max-width:767px){
+    .header h3{
+        font-size: 20px;
+        margin-right: 10px;
+    }
+}
+.header .box i{
+    margin-left: 180px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+@media(max-width:767px){
+    .header .box i{
+        font-size: 20px;
+        margin-left: 50px;
+    }
+}
+.header .box i:hover{
+    color: rgba(0, 0, 0, 0.747);
+}
+/* End Header */
+.to-do{
+    background-color: #ececec;
+    height: 200vh;
+    padding-top: 30px;
+}
+.dark .to-do{
+    background-color: #222;
+}
+.to-do .box{
+    position: relative;
+    padding-bottom: 200px;
+    margin-bottom: 200px;
+}
+.none{
+    display: none;
+}
+.finish{
+    text-decoration-line: line-through;
+}
+.orange{
+    color: orange;
+}
+p{
+    font-family:'Tajawal', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+.to-do .box .box-list{
+    /* margin-bottom: 200px; */
+    padding: 20px;
+    background-color: #f6f5f5;
+    background: rgba(134, 21, 156, 0.404);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 6px;
+    width: fit-content;
+    margin: 0 auto;
+    z-index: 1;
+}
+.to-do .box form{
+    text-align: center;
+    margin: 10px 0 20px;
+}
+.to-do .box  input{
+    padding: 10px;
+    caret-color: red;
+    border: none;
+    text-align: center;
+    width: 28vw;
+}
+@media(max-width:767px){
+    .to-do .box  input{
+        width: 65vw;
+    }
+}
+.to-do .box  input[type="text"]:focus{
+    outline: none;
+}
+.to-do .box  button{
+    padding:8px 10px ;
+    border: none;
+    background-color: #10cab7;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.to-do .box  button:hover{
+    background-color:#0db1a0 ;
+}
+.to-do .box .task{
+    border: 2px solid white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding:10px;
+    background-color: white;
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-bottom: 3px solid #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.to-do .box .task p{
+    font-weight: bold;
+}
+@media(max-width:767px){
+    .to-do .box .task{
+        width: 70vw;
+    }
+}
+.to-do .box .task .icon{
+    color: #10cab7;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 5px;
+}
+.to-do .box .task .icon:hover{
+    color: orangered;
+}
+.to-do .box .task .icon1{
+    color: #10cab7;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.to-do .box .task .fa-star:hover{
+    color: orange;
+}
+.fotter{
+    padding-top: 5px;
+    padding-bottom: 25px;
+    background-color: #ececec;
+    height: 20vh;
+}
+.fotter h2{
+    text-align: center;
+    font-size: 17px;
+}
